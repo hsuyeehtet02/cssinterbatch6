@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+
+		<style>
+			
+			body{
+				height: 100vh;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.container{
+				width: 500px;
+				background-color: #f4f4f4;
+				perspective: 300px;
+
+				
+			}
+			.div1{
+				width: 250px;
+				height: 150px;
+				border: 1px solid black;
+				background: linear-gradient(black,silver);
+				box-shadow: -5px 0 10px rgba(0, 0, 0, 0.6);
+				margin: auto;
+
+				position: relative;
+				
+			}
+			.div2{
+				width: 200px;
+				height: 100px;
+				border: 1px solid black;
+				background: linear-gradient(black,silver);
+				box-shadow: -5px 0 10px rgba(0, 0, 0, 0.6);
+				margin: auto;
+				
+				transform: rotateX(45deg);
+
+				padding: 40px;
+
+				position: absolute;
+				left:110px;
+				top: -50%;
+
+				z-index:10;
+
+			}
+			.div3{
+				width:50px;
+				height: 100px;
+				border-left: 1px dotted #000;
+				border-right: 1px dotted #000;
+				background:
+				conic-gradient(silver 50% ,gray 0% 100%);
+
+				position: absolute;
+				left: 60%;
+				bottom: 0;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="div1">Div 1</div>
+			<div class="div2">Div 2</div>
+			<div class="div3">Div 3</div>
+
+			</div>
+	</body>
+</html>

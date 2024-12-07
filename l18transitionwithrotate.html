@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Transition Effect</title>
+		<style type="text/css">
+
+			.container{
+				width: 1200px;
+				margin: 10px;
+				background: gray;
+			}
+			.container .square{
+				width: 150px;
+				height: 50px;
+				background-color: red;
+				color: #fff;
+
+				transition-property: tranform 3s;
+				transition-duration: 2s ;
+
+			}
+			
+			#roate{
+				transition-timing-function: ease;
+			}
+			#rotatex{
+				transition-timing-function: linear;
+			}
+			#rotatey{
+				transition-timing-function: ease-in;
+			}
+			#rotate:hover{
+
+/*				transform:rotate(45deg);*/
+/*				transform: rotate(1turn);*/
+				transform: rotate(400grad);
+			}
+
+			#rotatex:hover{
+				transform: rotateX(90deg);
+			}
+
+			#rotatey:hover{
+				transform: rotateY(90deg);
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="rotate" class="square"> This is div1 XY</div>
+		</div>
+		<div class="container">
+			<div id="rotatex" class="square">This is div2 X</div>
+		</div>
+		<div class="container">
+			<div id="rotatey" class="square">This is div Y</div>
+		</div>
+		
+		
+
+	</body>
+</html>

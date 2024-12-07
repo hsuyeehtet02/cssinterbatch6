@@ -1,0 +1,24 @@
+.div1,.div2,.div3{
+	width: 200px;
+	height: 100px;
+	background: green;
+	color: #fff;
+	border: 10px solid lightblue;
+	outline: 5px solid rosybrown;
+}
+
+.div2{
+	box-sizing: border-box;
+	padding: 20px;
+}
+.div3{
+	box-sizing: content-box;
+}
+
+.div4{
+	width: 200px;
+	height: 100px;
+	background: steelblue;
+	color: #fff;
+
+}

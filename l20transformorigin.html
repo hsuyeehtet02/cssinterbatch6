@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Transform Origin</title>
+		<style type="text/css">
+			body{
+				height: 100vh;
+
+				/*display: flex;
+				justify-content: center;
+				align-items: center;*/
+
+				display: grid;
+				place-items: center;
+			}
+
+			img{
+				width: 400px;
+				height: 250px;
+				transition: transform 2s linear;
+/*				transform-origin: center;*/
+/*				transform-origin: left;*/
+/*				transform-origin: right;*/
+/*				transform-origin: bottom;*/
+/*				transform-origin: 100px;*/
+				transform-origin: 400px;
+
+/*								left center*/
+				transform-origin: 0;
+/*								left top*/
+				transform-origin: 0 0;
+				transform-origin: 30% 50%;
+			}
+			img:hover{
+				transform: rotate(45deg);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<img src="./img/cutedog.jpg" alt="dog" />
+		</div>
+	</body>
+</html>

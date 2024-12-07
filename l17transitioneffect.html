@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Transition Effect</title>
+		<style type="text/css">
+
+			.container{
+				width: 1200px;
+				margin: 10px;
+				background: gray;
+			}
+			.container .square{
+				width: 150px;
+				height: 50px;
+				background-color: red;
+				color: #fff;
+
+				transition-property: tranform 3s;
+				transition-duration: 5s ;
+
+			}
+			.square:hover{
+
+				transform: translate(1050px);
+
+			}
+			#ease{
+				transition-timing-function: ease;
+			}
+			#linear{
+				transition-timing-function: linear;
+			}
+			#ease-in{
+				transition-timing-function: ease-in;
+			}
+			#ease-out{
+				transition-timing-function: ease-out;
+			}
+			#ease-in-out{
+				transition-timing-function: ease-in-out;
+		}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="ease" class="square"> This is div1 ease</div>
+		</div>
+		<div class="container">
+			<div id="linear" class="square">This is div2 linear</div>
+		</div>
+		<div class="container">
+			<div id="ease-in" class="square">This is div3 ease-in</div>
+		</div>
+		<div class="container">
+			<div id="ease-out" class="square">This is div4 ease-out</div>
+		</div>
+		<div class="container">
+			<div id="ease-in-out" class="square">This is div5 ease-in-out</div>
+		</div>
+		
+
+	</body>
+</html>

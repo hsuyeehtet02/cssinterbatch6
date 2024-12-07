@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>perspective</title>
+
+		<style>
+			body{
+				height: 100vh;
+				display: grid;
+				place-items: center;
+			}
+			.container{
+				perspective: 500px;
+			}
+			img{
+				width: 300px;
+				transition: transform 2s;
+			}
+
+			img:hover{
+				transform: translateZ(-300px);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+			<img src="./img/cutedog.jpg" alt="cutedog"/>
+		</div>
+	</body>
+</html>

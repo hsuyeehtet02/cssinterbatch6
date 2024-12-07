@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hover Effect</title>
+
+		<style>
+			
+			body{
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			button{
+				color: #000;
+				
+
+				font-size: 20px;
+				border: 3px solid black;
+				padding: 20px 40px;
+				position: relative;
+
+				background: none;
+/*				position: relative;*/
+				overflow: hidden;
+				
+			}
+
+			button::before{
+				content: "Press Me";
+
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				background: steelblue;
+
+				position: absolute;
+				left: 0;
+				top: 0;
+
+				display: grid;
+				place-items: center;
+
+				transform: scale(5);
+
+				transition: all 1s;
+				opacity: 0;
+
+
+			}
+
+			button:hover::before{
+				transform: scale(1.0);
+				opacity: 1;
+			}
+
+			button:active::before{
+				content: "Thank You";
+			}
+
+			
+		</style>
+
+	</head>
+	<body>
+		<button type="button">Hover Me</button>
+	</body>
+</html>

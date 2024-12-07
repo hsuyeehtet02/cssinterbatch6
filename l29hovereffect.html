@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hover Effect</title>
+
+		<style>
+			
+			body{
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			button{
+				color: #000;
+				
+
+				font-size: 20px;
+				border: 3px solid black;
+				padding: 20px 40px;
+				position: relative;
+
+				background: none;
+				position: relative;
+				overflow: hidden;
+				
+			}
+
+			button::after{
+				content: "";
+
+				width: 100%;
+				height: 100%;
+
+				background: steelblue;
+				position:absolute;
+				left:-100%;
+				top:-100%;
+				z-index: -1;
+
+/*				transform: translate(100%);*/
+/*				transform: translate(-100%);*/
+				transition: transform 2s ease-in;
+
+			}
+
+			button:hover::after{
+
+			
+/*				transform: translateY(100%);*/
+				transform: translate(100%,100%);
+			}
+		</style>
+
+	</head>
+	<body>
+		<button type="button">Hover Me</button>
+	</body>
+</html>

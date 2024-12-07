@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Transition Effect</title>
+		<style type="text/css">
+
+			.container{
+				width: 1200px;
+				margin: 10px;
+				background: gray;
+			}
+			.container .square{
+				width: 150px;
+				height: 50px;
+				background-color: red;
+				color: #fff;
+
+				transition-property: tranform ;
+				transition-duration: 2s ;
+				transition-timing-function: linear;
+
+			}
+			
+			
+			#scale:hover{
+
+				transform: scale(0.5);
+			}
+
+			#scalex:hover{
+				transform:scalex(2)
+			}
+			#scaley:hover{
+				transform: scaley(2);
+			}
+			#scalexy:hover{
+				transform: scale(2,1);
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="scale" class="square"> This is div1 XY</div>
+		</div>
+		<div class="container">
+			<div id="scalex" class="square">This is div2 X</div>
+		</div>
+		<div class="container">
+			<div id="scaley" class="square">This is div Y</div>
+		</div>
+		<div class="container">
+		<div id="scalexy" class="square">This is div XY</div>
+		</div>
+		
+		
+
+	</body>
+</html>
